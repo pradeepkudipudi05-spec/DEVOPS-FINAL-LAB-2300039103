@@ -28,10 +28,9 @@ spec:
             - containerPort: 3306
           env:
             - name: MYSQL_ROOT_PASSWORD
-              value: exam
-                 # ⚠️ change this for production
+              value: exam  # ⚠️ change this for production
             - name: MYSQL_DATABASE
-              value: projectdb
+              value: examdb
           volumeMounts:
             - name: mysql-storage
               mountPath: /var/lib/mysql
