@@ -8,6 +8,8 @@ COPY .mvn/ .mvn
 COPY pom.xml ./
 
 COPY src ./src
+#  Add this line to give permission
+RUN chmod +x mvnw
 
 RUN ./mvnw clean package -DskipTests
 
